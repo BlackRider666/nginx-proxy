@@ -11,6 +11,7 @@ services:
     networks:
       - wrp_network
       - memo_network
+      - idolina_network
 networks:
   wrp_network:
     external:
@@ -18,3 +19,6 @@ networks:
   memo_network:
     external:
       name: memology_memo_network
+  idolina_network:
+    external:
+      name: idolina_idolina_network
