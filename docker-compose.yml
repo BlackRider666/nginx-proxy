@@ -11,16 +11,12 @@ services:
       - ./docker/nginx:/etc/nginx/conf.d/
     networks:
       - wrp_network
-      - idolina_network
-      - memo_network
+      - wrp_global_network
 
 networks:
   wrp_network:
     external:
       name: wrp_wrp_network
-  idolina_network:
+  wrp_global_network:
     external:
-      name: idolina_idolina_network
-  memo_network:
-    external:
-      name: memology_memo_network
+      name: wrp_wrp_global_network
